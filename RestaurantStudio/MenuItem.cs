@@ -33,6 +33,7 @@ namespace RestaurantStudio
             }
             return String.Format("{0} - ${1} - {2} ({3}) {4}", Name, Price,  Description, Category, newText);
         }
+
         public override bool Equals(Object obj)
         {
             if (obj == null)
@@ -41,14 +42,17 @@ namespace RestaurantStudio
             }
 
 
-        {
-            //cast to MenuItem
-            MenuItem menuItem = (MenuItem)obj;
+       
+                //cast to MenuItem
+                MenuItem menuItem = (MenuItem)obj;
 
-            //check for value equality
-            //return a bool result
+                //check for value equality
+                //return a bool result
 
-            return this.Name == menuItem.Name && this.Category == menuItem. 
+                return this.Name == menuItem.Name && this.Category == menuItem.Category;
+            }
+
         }
+
     }
-}
+
