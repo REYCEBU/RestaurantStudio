@@ -6,8 +6,9 @@ namespace RestaurantStudio
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Blake's tasty menu!");
+            Console.WriteLine("Rey's Menu!");
             var menu = new Menu();
+            menu.AddMenuItem(new MenuItem("Hot Dogs", .99, "Mystery meat in link form.", "Main Course", false));
             menu.AddMenuItem(new MenuItem("Hot Dogs", .99, "Mystery meat in link form.", "Main Course", false));
             menu.AddMenuItem(new MenuItem("Mac n Cheese", 1.99, "Macoroni and cheese powder.", "Side", false));
             menu.AddMenuItem(new MenuItem("Humus and Pita", 3, "Freshly made humus with pita.", "Appetizer", true));
